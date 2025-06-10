@@ -4,16 +4,18 @@ Note:
 Licence under Creative Commons Attribution 3.0  
 -------------------------------------------------------*/
 
-@import url('http://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700|Open+Sans:400,600,700'); 
+/* Import Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&family=Work+Sans:wght@300;400;500;600;700&display=swap');
 @import url('http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');   
 @import url('animate.css');
 
 body {
-	font-family:'Open Sans', Arial, sans-serif;
-	font-size:14px;
-	font-weight:300;
-	line-height:1.6em;
-	color:#656565;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #333333; /* Dark gray for better readability */
+    background: #ffffff; /* Clean white background */
 }
 
 a:active {
@@ -25,11 +27,11 @@ a:active {
 }
 
 h1,h2, h3, h4, h5, h6 {
-	font-family:'Open Sans', Arial, sans-serif;
-	font-weight:700;
-	line-height:1.1em;
-	color: #333;
-	margin-bottom: 7px;
+    font-family: 'Crimson Text', serif;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #4a0404; /* Changed from #8b0000 to a deeper burgundy */
+    margin-bottom: 15px;
 }
 h3{
 margin-bottom:15px;
@@ -75,13 +77,13 @@ header .navbar {
 }
 
 .navbar-brand {
-    color: #222;
+    color: #ffd700 !important;
 	text-transform: uppercase;
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 700;
     /* line-height: 1em; */
 	
-    letter-spacing: -1px;
+    letter-spacing: 0.5px;
     /* margin-top: 9px; */
     /* padding: 0 0 0 15px; */
 }
@@ -98,7 +100,7 @@ header .navbar-collapse  ul.navbar-nav {
 header .navbar {
 /* min-height: 70px; */
 padding: 18px 0;
-background: #fff;
+background: #003300;
 }
 .home-page header .navbar-default{
     background: rgba(255, 255, 255, 1);	
@@ -351,9 +353,25 @@ left:0px;
 right:0px;
 }
 .flex-caption {zoom: 1;
-bottom: 0; background-color: #09ca19; color: #fff; margin: 0; padding: 3px 24px; position: absolute; left: 0; text-align: left;margin: 0 auto;right: 0px;display: inline-block;}
-.flex-caption h3 {color: #fff; letter-spacing: 1px; margin-bottom: 8px; text-transform: uppercase;font-size: 38px;}
-.flex-caption p {margin: 0px 0 18px;font-size: 18px;line-height: 30px;}
+bottom: 0; background-color: ; color: #fff; margin: 0; padding: 3px 24px; position: absolute; left: 0; text-align: left;margin: 0 auto;right: 0px;display: inline-block;}
+.flex-caption h3 {
+    font-family: 'Crimson Text', serif;
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 15px;
+    color: #ffffff; /* White */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Text shadow for better readability */
+}
+.flex-caption p {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #f0f0f0; /* Light gray */
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
 .skill-home{
 margin-bottom:50px;
 }
@@ -447,14 +465,14 @@ margin: auto;
 }
 .aboutUs{
 padding:40px 0;
-background: #1fd803;
+background: #17fa024a;
 color: #fff;
 }
 .aboutUs .container{ 
-background: #34cd12; 
+background: #03470c; 
 }
 .aboutUs h2{
-color:#fff;
+color:#f3f300;
 }
 img.img-center {
 margin: 0 auto;
@@ -957,6 +975,18 @@ border-radius: 0;padding: 12px 22px;border: 0;}
 	background:#fff;
 }
 
+.btn-primary {
+    background-color: #003300;
+    border-color: #ffd700;
+    color: #ffd700;
+}
+
+.btn-primary:hover {
+    background-color: #004d00;
+    border-color: #ffed4a;
+    color: #ffed4a;
+}
+
 /* --- list style --- */
 
 ul.general {
@@ -998,9 +1028,11 @@ h4.heading {
 
 
 .widgetheading {
-	width:100%;
-
-	padding:0;
+    font-family: 'Crimson Text', serif;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #4a0404; /* Added to match heading color */
 }
 
 #bottom .widgetheading {
@@ -1187,7 +1219,7 @@ border: 1px solid #e6e6e6;
 	display:block;
 }
 .pricing-box-item.activeItem .pricing-heading {
-	background: #fcfcfc;
+	background: #177500;
 	text-align: center;
 	padding:0px 0 1px 0;
 	border-bottom:none;
@@ -1211,7 +1243,7 @@ border: 1px solid #e6e6e6;
 
 .pricing-box-item .pricing-terms {
 	text-align: center;
-	background: #B3B3B3;
+	background: #ffe100;
 	display: block;
 	overflow: hidden;
 	padding: 11px 0 5px; 
@@ -1220,7 +1252,7 @@ border: 1px solid #e6e6e6;
 .pricing-box-item .pricing-terms  h6 {
 	font-style:italic;
 	margin-top:10px;
-	color:#fff;
+	color:#ffe600;
 	font-size:17px;
 	font-family:'Noto Serif', serif;
 }
@@ -1229,7 +1261,7 @@ border: 1px solid #e6e6e6;
     margin: 10px 10px 10px 0;
     display: inline-block !important;
     text-align: center !important;
-    color: #fff;
+    color: #ffd500;
     width: 68px;
     height: 68px;
 	padding:12px;
@@ -1291,20 +1323,20 @@ footer .widget .flickr_badge img {
   
 footer{
 	padding:50px 0 0 0;
-	color:#f8f8f8;
-	background-color: #09ca19;
+	color:#feed00;
+	background-color: #06610e;
 }
 
 footer a {
-	color:#fff;
+	color:#ffd900;
 }
 
 footer a:hover {
-	color:#eee;
+	color:#fdec00;
 }
 
 footer h1, footer h2, footer h3, footer h4, footer h5, footer h6{
-	color:#fff;
+	color:#ffe600;
 }
 
 footer address {
@@ -1562,8 +1594,8 @@ article img.pull-right, article .align-right{
 
 /*-------Contact---------*/
 .contact input{
-  background: #fff;
-  border: solid 1px #ddd;
+  background: #6cbf6f;
+  border: solid 1px #006c16;
   color: #000;
   padding: 15px 30px;
   margin-right: 3%;
@@ -1576,7 +1608,7 @@ article img.pull-right, article .align-right{
 }
 
 .contact textarea{
-  background: #fff;
+  background: #599b5d;
   color: #000;
   border: solid 1px #ddd;
   padding: 15px 30px;
@@ -1612,7 +1644,7 @@ article img.pull-right, article .align-right{
   transition: border linear 0.2s,box-shadow linear 0.2s;
 }
 .post3 a{
-background: rgb(249, 249, 249);
+background: rgb(6, 115, 0);
 padding: 10px;
 display: block;
 margin: 0px;
@@ -1688,7 +1720,7 @@ border-color: rgba(255, 255, 255, 0.58);
 margin-top: 15px;
 }
 .navbar-toggle { 
-  background-color: rgb(245, 138, 46);
+  background-color: rgb(255, 247, 0);
   background-image: none;
   border: 0;
   border-radius: 0;
@@ -1714,7 +1746,7 @@ margin-top: 15px;
 .navbar .nav > .active > a, .navbar .nav > .active > a:hover {
 background: none;
 font-weight: 700;
-color: #FFFFFF;
+color: #f0fc03;
 }
 	header .navbar-nav > li {
 padding-bottom: 2px;
@@ -1851,3 +1883,49 @@ li.active {
 background: rgb(255, 184, 0);
 }
 footer .container{sharp}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+body.dark-mode .navbar {
+  background-color: #2d2d2d;
+}
+
+/* Theme toggle button */
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.theme-toggle button {
+  background: none;
+  border: none;
+  color: #333;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+body.dark-mode .theme-toggle button {
+  color: #fff;
+}
+
+/* Ark styles */
+.ark-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+.ark {
+  width: 60px;
+  height: 40px;
+  background: #8b4513;
